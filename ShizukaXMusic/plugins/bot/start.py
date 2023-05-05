@@ -273,11 +273,11 @@ async def welcome(client, message: Message):
 @app.on_message(commandpro(["/alive", "Shizuka"]) & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/23615b2cd326c192a5af7.jpg",
+        photo=f"https://telegra.ph/file/38148b49244376626ec1a.jpg",
         caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ʜᴇʟʟᴏ, {MUSIC_BOT_NAME} ɪs ᴡᴏʀᴋɪɴɢ ᴀɴᴅ ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/EAGLE_BACK) ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴛᴀʀ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━
 """,
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🤧 ᴇᴀɢʟᴇ ᴄʜᴀᴛ 🦥", url=f"https://t.me/ODDRAGONS")]]
+            [[InlineKeyboardButton("💫 ᴅɪsʜᴜ ᴄʜᴀᴛ 💫", url=f"https://t.me/ODDRAGONS")]]
         ),
       )
         
