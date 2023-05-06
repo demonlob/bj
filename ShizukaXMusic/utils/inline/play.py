@@ -6,7 +6,7 @@ import random
 
 
 selections = [
-             def stream_markup_timer(_, videoid, chat_id, played, dur):
+           def stream_markup_timer(_, videoid, chat_id, played, dur):
 
     played_sec = time_to_seconds(played)
 
@@ -18,43 +18,43 @@ selections = [
 
     if 0 < anon <= 10:
 
-        bar = "◉—————————"
+        bar = "◉—————————",
 
     elif 10 < anon < 20:
 
-        bar = "—◉————————"
+        bar = "—◉————————",
 
     elif 20 <= anon < 30:
 
-        bar = "——◉———————"
+        bar = "——◉———————",
 
     elif 30 <= anon < 40:
 
-        bar = "———◉——————"
+        bar = "———◉——————",
 
     elif 40 <= anon < 50:
 
-        bar = "————◉—————"
+        bar = "————◉—————",
 
     elif 50 <= anon < 60:
 
-        bar = "—————◉————"
+        bar = "—————◉————",
 
     elif 60 <= anon < 70:
 
-        bar = "——————◉———"
+        bar = "——————◉———",
 
     elif 70 <= anon < 80:
 
-        bar = "———————◉——"
+        bar = "———————◉——",
 
     elif 80 <= anon < 95:
 
-        bar = "————————◉—"
+        bar = "————————◉—",
 
     else:
 
-        bar = "—————————◉"
+        bar = "—————————◉",
 ]
 
 
