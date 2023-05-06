@@ -55,7 +55,7 @@ selections = [
     else:
 
         bar = "—————————◉"
-
+]
 
 
 
@@ -67,7 +67,7 @@ selections = [
 
  
 
-]
+
 
 
 ## After Edits with Timer Bar
