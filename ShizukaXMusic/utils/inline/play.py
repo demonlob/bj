@@ -6,7 +6,7 @@ import random
 
 
 selections = [
-           def stream_markup_timer(_, videoid, chat_id, played, dur):
+    def stream_markup_timer(_, videoid, chat_id, played, dur):
 
     played_sec = time_to_seconds(played)
 
