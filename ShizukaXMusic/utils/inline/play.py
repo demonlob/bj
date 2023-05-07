@@ -105,7 +105,12 @@ def telegram_markup_timer(_, chat_id, played, dur):
             ),
             InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💌", url=f"{SUPPORT_GROUP}"),
         ],
-    ]
+        [
+            InlineKeyboardButton(
+                text=_["H_B_5"], callback_data="close"
+            )
+        ],
+   
     return buttons
 
 
@@ -127,6 +132,11 @@ def stream_markup(_, videoid, chat_id):
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
             InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💌", url=f"{SUPPORT_GROUP}"),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["H_B_5"], callback_data="close"
+            )
         ],
     ]
     return buttons
