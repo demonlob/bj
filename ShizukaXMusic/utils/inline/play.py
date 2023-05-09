@@ -107,10 +107,10 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         ]
 
-            InlineKeyboardButton(
-                text=_["H_B_5"] callback_data="close"
+          )
 
-            ),
+
+
             
 
         ],
