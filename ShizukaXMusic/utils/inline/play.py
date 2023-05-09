@@ -105,9 +105,17 @@ def telegram_markup_timer(_, chat_id, played, dur):
             ),
             InlineKeyboardButton(text="ᴄʜᴀᴛᴛɪɴɢ ɢʀᴏᴜᴘ💫", url=f"{SUPPORT_GROUP}"),
         ],
-        ]
+        [
 
-          
+            InlineKeyboardButton(
+
+                text=_["H_B_5"], callback_data="close"
+
+            )
+
+        ],
+
+    ]                        
 
 
 
