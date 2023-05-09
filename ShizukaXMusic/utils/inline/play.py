@@ -107,7 +107,15 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         ]
 
+            InlineKeyboardButton(
+                text=_["CLOSEMENU_BUTTON"], callback_data="close"
 
+            ),
+            
+
+        ],
+
+    ]
             
         
     return buttons
