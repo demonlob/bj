@@ -68,7 +68,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="🌹 sᴏᴜʀᴄᴇ 🌹", url=f"https://telegra.ph/file/a3774234d68138c843880.mp4"
+                text="sᴏᴜʀᴄᴇ 🗿", url=f"https://telegra.ph/file/a3774234d68138c843880.mp4"
             ),
         ],
         [
@@ -76,7 +76,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
             ),
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💌", url=f"{SUPPORT_GROUP}"),
+            InlineKeyboardButton(text="ᴄʜᴀᴛᴛɪɴɢ ɢʀᴏᴜᴘ💫 ", url=f"{SUPPORT_GROUP}"),
         ],
     ]
     return buttons
@@ -96,19 +96,19 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="🌹 sᴏᴜʀᴄᴇ 🌹", url=f"https://telegra.ph/file/a3774234d68138c843880.mp4"),
+            InlineKeyboardButton(text="sᴏᴜʀᴄᴇ 🗿", url=f"https://telegra.ph/file/a3774234d68138c843880.mp4"),
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💌", url=f"{SUPPORT_GROUP}"),
+            InlineKeyboardButton(text="ᴄʜᴀᴛᴛɪɴɢ ɢʀᴏᴜᴘ💫", url=f"{SUPPORT_GROUP}"),
         ],
         ]
 
             InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data="close"
+                text=_["H_B_5"] callback_data="close"
 
             ),
             
@@ -131,14 +131,14 @@ def stream_markup(_, videoid, chat_id):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="🌹 sᴏᴜʀᴄᴇ 🌹", url=f"https://telegra.ph/file/a3774234d68138c843880.mp4"),
+            InlineKeyboardButton(text="sᴏᴜʀᴄᴇ 🗿", url=f"https://telegra.ph/file/a3774234d68138c843880.mp4"),
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💌", url=f"{SUPPORT_GROUP}"),
+            InlineKeyboardButton(text="ᴄʜᴀᴛᴛɪɴɢ ɢʀᴏᴜᴘ💫", url=f"{SUPPORT_GROUP}"),
         ],
         [
             InlineKeyboardButton(
