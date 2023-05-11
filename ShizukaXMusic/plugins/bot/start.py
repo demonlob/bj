@@ -272,7 +272,7 @@ async def welcome(client, message: Message):
             return
 
 
-@app.on_message(commandpro(["/alive", "Shizuka"]) & ~filters.edited)
+@app.on_message(commandpro(["/alive", "Dishu"]) & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/38148b49244376626ec1a.jpg",
@@ -280,8 +280,8 @@ async def start(client: Client, message: Message):
 """,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("💫 ᴅɪsʜᴜ ᴄʜᴀᴛ 💫", url=f"https://t.me/ODDRAGONS")]]
-        reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("💫 ᴏᴡɴᴇʀ 💫", url=f"https://t.me/EAGLE_BACK")]]
+
+
         ),
       )
         
