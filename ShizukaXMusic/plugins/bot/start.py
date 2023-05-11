@@ -40,7 +40,8 @@ loop = asyncio.get_running_loop()
 async def start_comm(client, message: Message, _):
     await add_served_user(message.from_user.id)
     if len(message.text.split()) > 1:
-
+    keyboard = help_pannel(_)
+         await message.reply_sticker("CAACAgUAAxkBAAEBJ1JkXSbnJgXRWHOJM1aiqCLynMysjAAC9gwAAtKK6FaOtVkYl2INzi8E)
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = help_pannel(_)
@@ -283,5 +284,5 @@ async def start(client: Client, message: Message):
       )
         
       
-         message.reply_sticker("CAACAgUAAxkBAAEBJ1JkXSbnJgXRWHOJM1aiqCLynMysjAAC9gwAAtKK6FaOtVkYl2INzi8E)
+         
   
