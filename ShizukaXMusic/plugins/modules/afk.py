@@ -5,13 +5,13 @@ import random
 
 
 
-from StarRobot import dispatcher,OWNER_ID
-from StarRobot.modules.disable import (
+from  import dispatcher,OWNER_ID
+from .modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from StarRobot.modules.sql import afk_sql as sql
-from StarRobot.modules.users import get_user_id
+from .modules.sql import afk_sql as sql
+from .modules.users import get_user_id
 
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
