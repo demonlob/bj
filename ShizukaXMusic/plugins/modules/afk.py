@@ -2,8 +2,8 @@ import html
 import random
 
 
-from telegram.error import BadRequest
-from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
+
+
 
 from StarRobot import dispatcher,OWNER_ID
 from StarRobot.modules.disable import (
