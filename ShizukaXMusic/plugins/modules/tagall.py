@@ -1,6 +1,6 @@
 import asyncio
 
-from  import events
+from import events
 from errors import UserNotParticipantError
 from tl.functions.channels import GetParticipantRequest
 from tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
