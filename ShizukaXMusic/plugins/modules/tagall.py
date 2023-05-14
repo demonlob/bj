@@ -1,9 +1,9 @@
 import asyncio
 
 from  import events
-from .errors import UserNotParticipantError
-from .tl.functions.channels import GetParticipantRequest
-from .tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
+from errors import UserNotParticipantError
+from tl.functions.channels import GetParticipantRequest
+from tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 import random
 from StarRobot import telethn as client
 
