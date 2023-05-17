@@ -135,7 +135,7 @@ def stream_markup(_, videoid, chat_id):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="sᴏᴜʀᴄᴇ 🗿", url=f"https://telegra.ph/file/a3774234d68138c843880.mp4"),
+            InlineKeyboardButton(text="ᴄʜᴀᴛʙᴏᴛ🕊️", url=f"https://t.me/Me_Lily_ChatBot"),
         ],
         [
             InlineKeyboardButton(
