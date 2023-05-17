@@ -67,14 +67,14 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         buttons.append(
             [
                 InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER),
-                InlineKeyboardButton(text=_["S_B_6"], url=f"https://telegra.ph/file/a3774234d68138c843880.mp4"),
+                InlineKeyboardButton(text=_["S_B_6"], url=f"https://t.me/Me_Lily_ChatBot"),
             ]
         )
     else:
         if GITHUB_REPO:
             buttons.append(
                 [
-                    InlineKeyboardButton(text=_["S_B_6"], url=f"https://telegra.ph/file/a3774234d68138c843880.mp4"),
+                    InlineKeyboardButton(text=_["S_B_6"], url=f"https://t.me/Me_Lily_ChatBot"),
                 ]
             )
         if OWNER:
