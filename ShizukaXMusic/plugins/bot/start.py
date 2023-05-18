@@ -41,8 +41,8 @@ async def start_comm(client, message: Message, _):
     await add_served_user(message.from_user.id)
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
-        if name[0:4] == "help":
-           keyboard = help_pannel(_)
+        if name[0:4] == "start":
+           keyboard = start_pannel(_)
            await message.reply_sticker("CAACAgUAAxkBAAEBJ1JkXSbnJgXRWHOJM1aiqCLynMysjAAC9gwAAtKK6FaOtVkYl2INzi8E")
            return await message.reply_photo(
                      photo=config.START_IMG_URL,
