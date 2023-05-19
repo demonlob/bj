@@ -41,16 +41,6 @@ async def start_comm(client, message: Message, _):
     await add_served_user(message.from_user.id)
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
-        if name[0:4] == "start":
-           keyboard = start_pannel(_)
-           await message.reply_sticker("CAACAgUAAxkBAAEBJ1JkXSbnJgXRWHOJM1aiqCLynMysjAAC9gwAAtKK6FaOtVkYl2INzi8E")
-           return await message.reply_photo(
-                     photo=config.START_IMG_URL,
-                     caption=_["help_1"].format(config.SUPPORT_HEHE), reply_markup=keyboard
-           )
-                       
-
-            
         if name[0:4] == "help":
             keyboard = help_pannel(_)
             return await message.reply_text(_["help_1"], reply_markup=keyboard)
@@ -94,7 +84,7 @@ async def start_comm(client, message: Message, _):
                     details = stats.get(vidid)
                     title = (details["title"][:35]).title()
                     if vidid == "telegram":
-                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/ODDRAGONS) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/Best_FriendsFor_Ever) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
                     else:
                         msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** played {count} times**\n\n"
                 msg = _["ustats_2"].format(tot, tota, limit) + msg
@@ -188,19 +178,6 @@ async def start_comm(client, message: Message, _):
         out = private_panel(_, app.username, OWNER)
         if config.START_IMG_URL:
             try:
-                if config.START_IMG_URL:
-
-            try:
-                await message.reply_sticker("CAACAgUAAxkBAAIPlmRm_HN6unSK8Ku6ap2GOdckyugRAAKxAwACk_OgV0mlBAdqK99cLwQ")
-                await message.reply_photo(                
-                    photo=config.START_IMG_URL,
-                    caption=_["start_2"].format(       
-                        config.MUSIC_BOT_NAME
-                    
-
-                    
-
-                        
                 await message.reply_photo(
                     photo=config.START_IMG_URL,
                     caption=_["start_2"].format(config.MUSIC_BOT_NAME),
@@ -293,22 +270,13 @@ async def welcome(client, message: Message):
             return
 
 
-@app.on_message(commandpro(["/alive", "Dishu"]) & ~filters.edited)
+@app.on_message(commandpro(["/alive", "Shizuka"]) & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/38148b49244376626ec1a.jpg",
-        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ʜᴇʟʟᴏ, {MUSIC_BOT_NAME} ɪs ᴡᴏʀᴋɪɴɢ ᴀɴᴅ ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/EAGLE_BACK) ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴛᴀʀ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━
+        photo=f"https://te.legra.ph/file/0d048443e85813227f253.jpg",
+        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ʜᴇʟʟᴏ, {MUSIC_BOT_NAME} ɪs ᴡᴏʀᴋɪɴɢ ᴀɴᴅ ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/its_star_boi) ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴛᴀʀ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━
 """,
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("💫 ᴅɪsʜᴜ ᴄʜᴀᴛ 💫", url=f"https://t.me/ODDRAGONS")]]
-
-
+            [[InlineKeyboardButton("🌼 sʜɪᴢᴜᴋᴀ ᴄʜᴀᴛ 💮", url=f"https://t.me/Best_FriendsFor_Ever")]]
         ),
-      )
-        
-       
-
-
-
-
-  
+    )
