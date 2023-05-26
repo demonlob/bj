@@ -2,7 +2,7 @@ from typing import Union
 
 from pyrogram.types import InlineKeyboardButton
 
-from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
+from config import SUPPORT_CHANNEL, SUPPORT_GROUP, GITHUB_REPO, OWNER_ID as OWNER
 from ShizukaXMusic import app
 
 
@@ -67,14 +67,14 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         buttons.append(
             [
                 InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER),
-                InlineKeyboardButton(text=_["S_B_6"], url=f"{GITHUB_REPO}"),
+                InlineKeyboardButton(text=_["S_B_6"], url=f"https://github.com/itz-star-boi/ShizukaXMusic"),
             ]
         )
     else:
         if GITHUB_REPO:
             buttons.append(
                 [
-                    InlineKeyboardButton(text=_["S_B_6"], url=f"https://te.legra.ph/file/18f37c621bc8477706eac.jpg"),
+                    InlineKeyboardButton(text=_["S_B_6"], url=f"https://te.legra.ph/file/27c8fc7256335c7ca2b8a.mp4"),
                 ]
             )
         if OWNER:
